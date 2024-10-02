@@ -18,7 +18,9 @@ qa-editor/
 
 # 安裝和運行
 1. clone 到本地:
-```git clone https://github.com/mm1719/qa-editor.git```
+```
+git clone https://github.com/mm1719/qa-editor.git
+```
 2. 安裝與啟動:
 ```
 cd qa-editor
