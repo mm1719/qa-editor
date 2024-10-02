@@ -39,7 +39,7 @@ document.getElementById('loadFile').addEventListener('click', () => {
             showPage(2); // 跳到第二頁顯示第一個問題
         })
         .catch(error => {
-            console.error('Error loading file:', error);
+            alert('File Not Found.');
         });
 });
 
