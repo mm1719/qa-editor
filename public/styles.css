@@ -1,0 +1,91 @@
+body, html {
+    background-color: #121212;
+    color: #d4d4d4;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 { text-align: center; }
+.page { 
+    display: none; 
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.active { display: block; }
+
+.box {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-size: 14px;
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+}
+
+.questionInput, .assistantInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;      /* 防止單詞被硬切割 */
+    white-space: pre-wrap;     /* 保留換行符號，按照詞換行 */
+    resize: none;
+    background-color: #333333;
+    color: #e0e0e0; 
+}
+.questionInput {
+    height: 60px;
+}
+.assistantInput {
+    height: 200px;
+}
+
+.content {
+    width: 100%;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.button-container {
+    display: flex;               /* 使用 Flexbox 來讓按鈕在容器內水平排列 */
+    justify-content: center;
+    gap: 15px;                   /* 增加按鈕之間的間距 */
+}
+button {
+    font-size: 14px;
+    cursor: pointer;             /* 鼠標懸停時顯示手指圖標 */
+    background-color: #555555;   /* 按鈕深色背景 */
+    color: #e0e0e0;              /* 淺色文字 */
+}
+
+#messageBox {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    font-size: 16px;
+    z-index: 9999;
+    opacity: 0.9;
+}

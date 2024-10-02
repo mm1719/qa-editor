@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversation Editor</title>
+</head>
+<body>
+    <div id="messageBox"></div>
+    <h1>Conversation Editor</h1>
+
+    <!-- 第一頁：輸入檔名 -->
+    <div class="page active" id="page1">
+        <label for="filename">Enter filename:</label>
+        <input type="text" id="filename" placeholder="e.g., data.txt">
+        <button id="loadFile">Load File</button>
+    </div>
+
+    <!-- 第二頁及後續頁面：顯示問題及答案 -->
+    <div class="page" id="page2">
+        <div class="box">
+            <h3 id="questionTitle"></h3>
+            <div class="content">
+                <div id="questionContent"></div>
+            </div>
+            <div class="button-container">
+                <button id="previousQuestion">Prev</button>
+                <button id="nextQuestion">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最後一頁：儲存修改 -->
+    <div class="page" id="pageSave">
+        <h3>Done! Save Changes? Start New File?</h3>
+        <div class="button-container">
+            <button id="previousSave">Go Back</button>
+            <button id="saveChanges">Save Changes</button>
+            <button id="backToFirstPage">New File</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
