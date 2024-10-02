@@ -1,3 +1,5 @@
-/app.ts
-/qa-22.txt
-/test.ts
+app.ts
+*.txt
+test.ts
+
+!example.txt
