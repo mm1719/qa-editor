@@ -18,13 +18,13 @@ qa-editor/
 
 # 安裝和運行
 1. clone 到本地:
-`git clone https://github.com/mm1719/qa-editor.git`
-2. 安裝與啟動
-`cd qa-editor`
-### 安裝 dependencies
-`npm install`
-### 啟動伺服器
-`npx ts-node server.ts`
+```git clone https://github.com/mm1719/qa-editor.git```
+2. 安裝與啟動:
+```
+cd qa-editor
+npm install
+npx ts-node server.ts
+```
 
 # 加入欲修改的JSON檔
 1. 校園小幫手英文QA -> QA**_filter -> 複製第一欄的內容到記事本
